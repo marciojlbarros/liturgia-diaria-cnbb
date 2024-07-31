@@ -26,7 +26,6 @@ export default function Home() {
   if (error) return <div>Error: {error}</div>;
 
   return (
-
     <section className="container">
       <div className="container" dangerouslySetInnerHTML={{ __html: data.details }} />
       <div className="container" dangerouslySetInnerHTML={{ __html: data.body }} />

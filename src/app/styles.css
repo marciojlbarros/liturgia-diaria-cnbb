@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.container {
+    font-family:"Libre Baskerville", serif;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: flex-end; /* Alinha os botões à direita */
+    margin-bottom: 20px;
+  }
+
+  .titleP{
+    padding-top: 20px;
+    text-align: left;
+    font-size: 12px;
+    color: #9a9a9a;
+  }
+  
+  .controls button {
+    font-size: 16px;
+    padding: 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #2e84bd;
+    border-radius: 5px;
+    border-style: none;
+  }
+  
+  .layout {
+    display: flex;
+    gap: 20px; /* Espaço entre as colunas */
+    flex-direction: row; /* Colunas lado a lado por padrão */
+    width: 100%;
+    max-width: 1200px; /* Largura máxima para centralizar o conteúdo */
+  }
+  
+  .calendar-container {
+    flex: 1; /* Permite que o calendário ocupe o espaço disponível */
+    max-width: 300px; /* Define uma largura máxima para o calendário */
+  }
+
+  .react-calendar, button {
+    text-decoration: none;
+    font-size: 14px;
+    font-family:"Libre Baskerville", serif;
+  }
+  
+  .reading-container {
+    flex: 2; /* Permite que a área de leitura ocupe mais espaço */
+    max-width: 800px; /* Define uma largura máxima para a área de leitura */
+  }
+
+  .react-calendar {
+    border: none; /* Remove a borda do calendário */
+  }
+
+  @media (max-width: 768px) {
+    .layout {
+      flex-direction: column-reverse; /* Empilha as colunas em uma coluna para telas menores */
+    }
+  
+    .reading-container {
+      max-width: 100%; /* Permite que as seções ocupem 100% da largura disponível */
+      flex-direction: reverse;
+    }
+    .calendar-container {
+      max-width: 100%; /* Permite que as seções ocupem 100% da largura disponível */
+    }
+
+    .react-calendar{
+        width: 100%;
+        padding: 10px;
+    }
+  }
+  
