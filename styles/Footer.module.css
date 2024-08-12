@@ -1,0 +1,32 @@
+.footerContainer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 70px;
+    background-color: #2e84bd;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  
+  .column {
+    flex: 1;
+    padding: 10px;
+    min-width: 200px;
+  }
+  
+  .logo {
+    max-width: 150px;
+    margin-bottom: 10px;
+  }
+  
+  .footerLink {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+  }
+  
+  .footerLink:hover {
+    text-decoration: underline;
+  }
+

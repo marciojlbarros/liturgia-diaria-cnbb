@@ -61,8 +61,9 @@ export default function Home() {
   if (error) return <div>Error: {error}</div>;
 
   return (
-    <section className="container">
+    <div className="container">
       <div className="layout">
+        
         <div className="reading-container" style={{ fontSize: `${fontSize}px` }}>
           <div className="controls">
             <button onClick={decreaseFontSize}>A-</button>
@@ -77,15 +78,21 @@ export default function Home() {
               </>
             ) : (
               <div>Select a date to see the reading</div>
-            )}
+            )}        
         </div>
-          <div className="calendar-container react-calendar">
-            <Calendar
-              onChange={handleDateChange}
-              value={selectedDate}
-            />
-          </div>
+
+        <div className="calendar-container react-calendar">
+          <Calendar
+            onChange={handleDateChange}
+            value={selectedDate}
+          />
+        </div>
+
       </div>
-    </section>
+
+    </div>
+         
   );
+
 }
+
